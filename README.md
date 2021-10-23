@@ -11,12 +11,13 @@ Le service permet de créer, récupérer ou supprimer des Documents.
 ## Mise en route
 ### Lancement
 Pour lancer le programme, se placer dans le répertoire app/main et entrer la commande :
-`go run .`
+- `go run .`
+
 Le serveur se lance alors en local sur le port 8081
 
 ### Lancement (Tests)
 Pour lancer tous les test du programme, se placer dans le répertoire source et entrer la commande :
-`go test -v  ./...`
+- `go test -v  ./...`
 
 ## Utilisation
 - Création :
