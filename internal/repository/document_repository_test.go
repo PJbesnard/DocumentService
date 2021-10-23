@@ -6,8 +6,8 @@ import (
 )
 
 func TestDocumentStock_GetById(t *testing.T) {
-	documents := make(map[string]Document)
 	t.Run("success", func(t *testing.T) {
+		documents := make(map[string]Document)
 		documents["testId"] = Document{DocumentId: "testId", Content: *&Content{Description: "Description test", Name: "Name test"}}
 		repository := NewDocumentStock(documents)
 		res, err := repository.GetById("testId")
@@ -15,8 +15,9 @@ func TestDocumentStock_GetById(t *testing.T) {
 		assert.NotNil(t, res)
 	})
 	t.Run("error-failed", func(t *testing.T) {
+		documents := make(map[string]Document)
 		repository := NewDocumentStock(documents)
-		res, err := repository.GetById("testId")
+		res, err := repository.GetById("anotherTestId")
 		assert.Error(t, err)
 		assert.Nil(t, res)
 	})
