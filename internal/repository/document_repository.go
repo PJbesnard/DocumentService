@@ -1,12 +1,12 @@
 package repository
 
 import (
-	"github.com/PJBesnard/DocumentService/documentService/internal/entity"
-	"github.com/PJBesnard/DocumentService/documentService/internal/utils"
+	"github.com/PJBesnard/DocumentService/entity"
+	"github.com/PJBesnard/DocumentService/internal/utils"
 )
 
 type Content struct {
-	Name        string `json:"name" binding:"required`
+	Name        string `json:"name" binding:"required""`
 	Description string `json:"description"`
 }
 

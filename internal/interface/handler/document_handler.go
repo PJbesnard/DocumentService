@@ -2,8 +2,8 @@ package handler
 
 import (
 	"encoding/json"
-	"github.com/PJBesnard/DocumentService/documentService/internal/repository"
-	"github.com/PJBesnard/DocumentService/documentService/internal/usecase"
+	"github.com/PJBesnard/DocumentService/internal/repository"
+	"github.com/PJBesnard/DocumentService/internal/usecase"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

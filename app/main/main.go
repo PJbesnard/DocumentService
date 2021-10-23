@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/PJBesnard/DocumentService/documentService/internal/interface/handler"
+	"github.com/PJBesnard/DocumentService/internal/interface/handler"
 	"github.com/gin-gonic/gin"
 	"log"
 	"math/rand"

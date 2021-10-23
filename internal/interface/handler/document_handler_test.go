@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"Vade/documentService/internal/repository"
-	"Vade/documentService/internal/usecase"
+	"github.com/PJBesnard/DocumentService/internal/repository"
+	"github.com/PJBesnard/DocumentService/internal/usecase"
 	"github.com/gin-gonic/gin"
 	"github.com/stretchr/testify/assert"
 	"net/http"

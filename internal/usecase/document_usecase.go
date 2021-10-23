@@ -1,6 +1,8 @@
 package usecase
 
-import "github.com/PJBesnard/DocumentService/documentService/internal/repository"
+import (
+	"github.com/PJBesnard/DocumentService/internal/repository"
+)
 
 type DocumentUseCase struct {
 	repository repository.DocumentStock
