@@ -1,6 +1,6 @@
 package usecase
 
-import "Vade/documentService/internal/repository"
+import "github.com/PJBesnard/DocumentService/documentService/internal/repository"
 
 type DocumentUseCase struct {
 	repository repository.DocumentStock
@@ -18,6 +18,6 @@ func (d *DocumentUseCase) DeleteById(id string) error {
 	return d.repository.DeleteById(id)
 }
 
-func (d *DocumentUseCase) UpdateById(document *repository.Document, id string) (*repository.Document, error) {
-	return d.repository.UpdateById(document, id)
+func (d *DocumentUseCase) Create(content *repository.Content) (*repository.Document, error) {
+	return d.repository.Create(content)
 }

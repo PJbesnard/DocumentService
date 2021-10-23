@@ -2,4 +2,4 @@ package entity
 
 import "errors"
 
-var ErrDocumentNotFound = errors.New("unknown document for the following id")
+var ErrDocumentNotFound = errors.New("unknown document for the id")
